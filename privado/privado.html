@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Descargas y Videos</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <h1>Centro de Descargas y Videos</h1>
+    <p>Accede a archivos y contenido multimedia</p>
+  </header>
+
+  <main class="container">
+    <!-- SECCIÓN DESCARGAS -->
+    <section class="card">
+      <h2>📁 Descargas</h2>
+      <div class="downloads">
+        <div class="item">
+          <h3>Archivo PDF</h3>
+          <p>Documento de ejemplo</p>
+          <a href="archivos/ejemplo.pdf" download class="btn">Descargar</a>
+        </div>
+        <div class="item">
+          <h3>Archivo ZIP</h3>
+          <p>Paquete comprimido</p>
+          <a href="archivos/ejemplo.zip" download class="btn">Descargar</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN VIDEOS -->
+    <section class="card">
+      <h2>🎬 Videos</h2>
+      <div class="videos">
+        <video controls>
+          <source src="videos/001.mp4" type="video/mp4">
+          Tu navegador no soporta el video.
+        </video>
+        <video controls>
+          <source src="videos/video_2025-12-16_22-30-05.mp4" type="video/mp4">
+          Tu navegador no soporta el video.
+        </video>
+        <video controls>
+          <source src="videos/video_2025-12-16_22-30-11.mp4" type="video/mp4">
+          Tu navegador no soporta el video.
+        </video>
+        <video controls>
+          <source src="videos/video_2025-12-16_22-30-13.mp4" type="video/mp4">
+          Tu navegador no soporta el video.
+        </video>
+        <video controls>
+          <source src="videos/video_2025-12-16_22-30-17.mp4" type="video/mp4">
+          Tu navegador no soporta el video.
+        </video>
+        <video controls>
+          <source src="videos/video_2025-12-16_22-30-20.mp4" type="video/mp4">
+          Tu navegador no soporta el video.
+        </video>
+        <video controls>
+          <source src="videos/VID_20230703_181531129.mp4" type="video/mp4">
+          Tu navegador no soporta el video.
+        </video>
+        <video controls>
+          <source src="videos/A young Mexican woman with a goddess-like body films herself completely naked.mp4" type="video/mp4">
+          Tu navegador no soporta el video.
+        </video>
+        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video" allowfullscreen></iframe>
+      </div>
+    </section>
+
+    <!-- SECCIÓN FOTOS -->
+    <section class="card">
+      <h2>🖼️ Galería de Fotos</h2>
+      <div class="gallery">
+        <img src="fotos/001.jpg" alt="Foto 1">
+        <img src="fotos/002.jpg" alt="Foto 2">
+        <img src="fotos/003.jpg" alt="Foto 3">
+        <img src="fotos/004.png" alt="Foto 4">
+        <img src="fotos/005.png" alt="Foto 5">
+        <img src="fotos/006.jpg" alt="Foto 6">
+        <img src="fotos/007.jpg" alt="Foto 7">
+        <img src="fotos/008.jpg" alt="Foto 8">
+        <img src="fotos/009.jpeg" alt="Foto 9">
+        <img src="fotos/010.jpeg" alt="Foto 10">
+        <img src="fotos/photo_2025-12-16_22-30-23.jpg" alt="Foto 11">
+        <img src="fotos/photo_2025-12-16_22-30-25.jpg" alt="Foto 12">
+        <img src="fotos/photo_2025-12-16_22-30-28.jpg" alt="Foto 13">
+        <img src="fotos/photo_2025-12-16_22-30-38.jpg" alt="Foto 14">
+        <img src="fotos/photo_2025-12-16_22-30-42.jpg" alt="Foto 15">
+        <img src="fotos/" alt="Foto 16">
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2025 - Todos los derechos reservados</p>
+  </footer>
+</body>
+</html>
+
+<!-- ARCHIVO CSS -->
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0f172a;
+  color: #e5e7eb;
+}
+
+.header {
+  text-align: center;
+  padding: 2rem;
+  background: #020617;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 2rem;
+}
+
+.card {
+  background: #020617;
+  padding: 1.5rem;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+}
+
+.card h2 {
+  margin-bottom: 1rem;
+}
+
+.downloads, .videos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.item {
+  background: #020617;
+  border: 1px solid #1e293b;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0.6rem 1rem;
+  background: #2563eb;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+}
+
+.btn:hover {
+  background: #1d4ed8;
+}
+
+video, iframe {
+  width: 100%;
+  height: 260px;
+  border-radius: 10px;
+  border: none;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.gallery img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 1px solid #1e293b;
+  transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+.footer {
+  text-align: center;
+  padding: 1rem;
+  background: #020617;
+  font-size: 0.9rem;
+}
+</style>
